@@ -6,6 +6,7 @@ import ResumeViewer from "./ResumeViewer";
 import { useDisclosure } from "@mantine/hooks";
 import { IconDownload } from "@tabler/icons-react";
 import Particles from "./magicui/Particles";
+import Profile from "../images/Profile.jpeg"
 import { NeonGradientCard } from "./magicui/neon-gradient-card";
 const About = () => {
     const [opened, { open, close }] = useDisclosure(false);
@@ -33,13 +34,13 @@ const About = () => {
                     <div className="text-white text-4xl flex font-semibold lg-mx:text-[27px] sm-mx:text-2xl xs-mx:text-xl xsm-mx:text-lg">I'm a&nbsp;<span className="text-primaryColor"><Typewriter options={{ strings: Info.stack, autoStart: true, loop: true, }} /> </span></div>
                     <div className="text-textColor text-xl w-[90%] text-justify my-8 lg-mx:my-0 font-semibold lg-mx:text-base sm-mx:text-sm xs-mx:text-xs">{Info.bio}</div>
                     <div className="xs-mx:w-[90%] flex gap-3 xs-mx:justify-between">
-                        <Button onClick={open} className="focus-visible:!outline-none !text-bgColor !w-fit xs-mx:!w-[46%]" size={btn} variant="filled" color="#64FFDA">Check Resume</Button>
-                        <Button component="a" href="Resume.pdf" download={Info.name} className="focus-visible:!outline-none !text-primaryColor !w-fit xs-mx:!w-[46%]" size={btn} variant="outline" color="#64FFDA" rightSection={<IconDownload size={20} />}>Download</Button>
+                        {/* <Button onClick={open} className="focus-visible:!outline-none !text-bgColor !w-fit xs-mx:!w-[46%]" size={btn} variant="filled" color="#64FFDA">Check Resume</Button> */}
+                        <Button component="a" href="Resume.pdf" download={Info.name} className="focus-visible:!outline-none !text-primaryColor !w-fit xs-mx:!w-[46%]" size={btn} variant="outline" color="#64FFDA" rightSection={<IconDownload size={20} />}>Download Resume</Button>
                     </div>
                 </div>
                 <div className="h-fit flex justify-center items-center rounded-full bs:mr-10 w-fit">
                     <NeonGradientCard className="w-[325px] h-[325px] lg-mx:w-64 lg-mx:h-64 xsm-mx:w-56 xsm-mx:h-56 items-center justify-center text-center">
-                        <img className="w-full  h-full rounded-full " src="profile.png" alt="profile" />
+                        <img className="w-full  h-full rounded-full " src={Profile} alt="profile" />
                     </NeonGradientCard>
                 </div>
             </div>

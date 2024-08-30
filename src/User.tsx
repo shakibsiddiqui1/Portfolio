@@ -1,66 +1,93 @@
+import Netflix from './images/Netflix.png'
+import Weather from './images/Weather.png'
+import Ecommerce from './images/Ecommerce.png'
+import Metaverse from './images/Metaverse.png'
+import Youtube from './images/Youtube.png'
+import Swiggy from './images/Swiggy.png'
+import HTML from './Icons/HTML.png'
+import Css from './Icons/CSS.png'
+import Javascript from './Icons/JavaScript.png'
+import Reacts from './Icons/React JS.png'
+import NextJs from './Icons/nextjs.png'
+import Redux from './Icons/Redux.png'
+import Jest from './Icons/Jest.png'
+import Node from './Icons/Node JS.png'
+import Mongo from './Icons/MongoDB.png'
+import Express from './Icons/Express JS.png'
+import Firebase from './Icons/Firebase.png'
+import Typescript from './Icons/TypeScript.png'
+import Git from './Icons/Git.png'
+import Github from './Icons/Github.png'
+import Vscode from './Icons/VS Code.png'
+import Postman from './Icons/Postman.png'
+import MongoCompass from './Icons/MongoDB Compass.png'
+import Docker from './Icons/docker.png'
+import Agile from './Icons/agile.png'
+import Styled from './Icons/styled.png'
+import Tailwind from './Icons/Tailwind CSS.png'
 import { IconBrandGithub, IconBrandInstagram, IconBrandLeetcode, IconBrandLinkedin, IconBrandYoutube } from "@tabler/icons-react";
-const Info = {
-    name: "Chandrabhan Maurya",
-    stack: ["Software Engineer", "Full Stack Developer", "Competitive Programmer", "Freelancer", "Open Source Contributor"],
-    bio: "I'm a passionate software engineer specialized in crafting efficient and scalable solutions, deliver top-notch web applications, and provide freelance services that exceed client expectations. Let's connect and create something amazing together!"
-}
 
+const Info = {
+    name: "Shakib Siddiqui",
+    stack: ["Software Engineer"],
+    bio: "I'm a passionate Front-End Developer specialized in crafting efficient and scalable solutions with 2.4 years of hands-on experience. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences."
+}
 
 
 const ProjectInfo = [
     {
-        title: "Ekart E-comm App",
-        desc: "Ekart is a modern, fully responsive e-commerce platform built using React, TailwindCSS, Heroicons, and HeadlessUI, offering a seamless shopping experience across all devices. It features secure user authentication with login, registration, and logout functionalities. Users can add items to a wishlist or remove them, search for specific products, and add them to a shopping cart for purchase. The checkout process includes form validation for address and payment information, ensuring accuracy and security. After purchase, users can view their order history in the Orders section. Ekart combines robust functionality with a sleek, intuitive design, making online shopping effortless and enjoyable.",
-        image: "Ekart.png",
+        title: "Netflix Clone",
+        desc: "Netflix Clone is a AI based movie application that replicates the core features of Netflix, including user authentication, movie playback, and suggest movies using AI. The front end is built with React, TailwindCSS, Redux.js, ChatGPT APIs, TMDB APIs and Firebase, while the back end uses Firebase for user authentication and data storage. Users can create an account, log in, search for movies, and create playlists. The app features real-time updates, so users can see new movies as they are added. Netlify Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
+        image: Netflix,
         live: true,
-        technologies: ["React", "Tailwind", "Redux", "Heroicons", "HeadlessUI"],
-        link: "https://code-mars.github.io/Ekart/",
-        github: "https://github.com/Code-Mars/Ekart/"
+        technologies: ["React", "Tailwind", "Redux", "ChatGPT API","TMDB API"],
+        link: "https://video-watcher.netlify.app/",
+        github: "https://github.com/shakibsiddiqui1/netflix-gpt"
     },
     {
-        title: "Facebook Clone",
-        desc: "Facebook Clone is a full-stack web application that replicates the core features of Facebook, including user authentication, posting, and commenting. The front end is built with React, TailwinCSS, Tabler-Icons, Mantine and Firebase, while the back end uses Firebase for user authentication and data storage. Users can create an account, log in, post updates, and comment on posts. The app features real-time updates, so users can see new comments as they are posted. Facebook Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
-        image: "Facebook.png",
-        live: false,
-        technologies: ["React", "Springboot", "MongoDB", "Tailwind", "Tabler-Icons", "Firebase"],
-        link: "https://github.com/Code-Mars/Facebook-Clone",
-        github: "https://github.com/Code-Mars/Facebook-Clone"
+        title: "Weather Tracker",
+        desc: "Weather Tracker is a fully responsive web application that allows users to track weather at their location and search weather of any country in the world. The front end is built with React, TailwindCSS, OpenWeather API. Users can see weather and search weather in search bar. The app features a clean, modern design with user-friendly interface. Weather Tracker combines functionality with style, making it easy to see the weather.",
+        image: Weather,
+        live: true,
+        technologies: ["React", "Open-Weather API", "Tailwind"],
+        link: "https://finds-weathers.netlify.app/",
+        github: "https://github.com/shakibsiddiqui1/find-weather"
     },
     {
-        title: "Spotify Clone",
-        desc: "Spotify Clone is a full-stack web application that replicates the core features of Spotify, including user authentication, music playback, and playlist creation. The front end is built with React, TailwindCSS, Heroicons, and Firebase, while the back end uses Firebase for user authentication and data storage. Users can create an account, log in, search for songs, and create playlists. The app features real-time updates, so users can see new songs as they are added. Spotify Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
-        image: "Spotify.png",
-        live: false,
-        technologies: ["React", "Springboot", "Tailwind", "Tabler-Icons", "MongoDB", "Firebase"],
-        link: "https://github.com/Code-Mars/Spotify-Clone",
-        github: "https://github.com/Code-Mars/Spotify-Clone"
+        title: "E-Commerce APP",
+        desc: "E-Commerce APP is a modern, fully responsive e-commerce platform built using React, TailwindCSS, Redux.js, offering a seamless shopping experience across all devices. Users can see items of different categories and toggle dark and light mode based on their preference. E-Commerce combines robust functionality with a sleek, intuitive design, making online shopping effortless and enjoyable.",
+        image: Ecommerce,
+        live: true,
+        technologies: ["React-JS", "Tailwind", "Redux"],
+        link: "https://shopsys-in.netlify.app/",
+        github: "https://github.com/shakibsiddiqui1/ecommerce-app"
     },
     {
-        title: "Travel Tracker",
-        desc: "Travel Tracker is a full-stack web application that allows users to track their travel experiences and share them with others. The front end is built with React, Bootstrap, while the back end uses Node.js, Express, and PostgresSQL. Users can create an account, log in, add new trips, and view their past trips on a map. The app features a clean, modern design with interactive maps and a user-friendly interface. Travel Tracker combines functionality with style, making it easy and enjoyable to record and share travel memories.",
-        image: "Travel.png",
-        live: false,
-        technologies: ["React", "Node.js", "PostgresSQL", "Express", "Bootstrap"],
-        link: "https://github.com/Code-Mars/Travel-Tracker",
-        github: "https://github.com/Code-Mars/Travel-Tracker"
+        title: "Metaverse APP",
+        desc: "Metaverse App is a modern, fully responsive metaverse platform built using React, TailwindCSS, Redux.js. It is beautiful and interactive landing page for metaverse products, Users can toggle dark and light mode based on their preference. Metaverse combines robust functionality with a sleek, intuitive design.",
+        image: Metaverse,
+        live: true,
+        technologies: ["React", "Tailwind", "Redux"],
+        link: "https://metaverse-apps.netlify.app/",
+        github: "https://github.com/shakibsiddiqui1/metaverse-app"
     },
     {
-        title: "Instagram Clone",
-        desc: "Instagram Clone is a full-stack web application that replicates the core features of Instagram, including user authentication, image uploading, and commenting. The front end is built with React, TailwindCSS, and Heroicons, while the back end uses Firebase for user authentication and image storage. Users can create an account, log in, upload images, and comment on posts. The app features real-time updates, so users can see new comments as they are posted. Instagram Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
-        image: "Instagram.png",
+        title: "Youtube Clone",
+        desc: "Youtube Clone is a fully resposive web application that replicates the core features of Youtube, including video play, suggests related videos, category wise videos, search videos, Live videos and commenting. The front end is built with React, TailwindCSS, Redux.js and Youtube APIs, Users can see category-wise videos, live videos, search videos and comment on videos. The app features real-time updates, so users can see new comments as they are posted. Youtube Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
+        image: Youtube,
         live: false,
-        technologies: ["React", "Springboot", "Tailwind", "Heroicons", "Firebase", "MongoDB"],
-        link: "https://github.com/Code-Mars/Instagram-Clone",
-        github: "https://github.com/Code-Mars/Instagram-Clone"
+        technologies: ["React", "Youtube API", "Redux", "Tailwind"],
+        link: "https://github.com/shakibsiddiqui1/youtubes-clone",
+        github: "https://github.com/shakibsiddiqui1/youtube-clone"
     },
     {
-        title: "CodeX Code Editor",
-        desc: "CodeX is a modern, fully responsive code editor built using React, TailwindCSS, and Ace Editor, offering a seamless coding experience across all devices. It features syntax highlighting for popular programming languages, including HTML, CSS, JavaScript, Python, and Java. Users can create, edit, and save code files, with the option to download them as text files. CodeX combines robust functionality with a sleek, intuitive design, making coding effortless and enjoyable.",
-        image: "CodeX.png",
+        title: "Food as Mood",
+        desc: "Food as Mood is a food ordering web application that replicates the core features of Swiggy, including restaurants-wise foods, search food, filter foods and add to cart functionality. The front end is built with React, TailwindCSS, Swiggy Api and Redux.js, Users can see listed restaurants, order food, add to cart and remove the food, search the food. Listed restaurants are labeled by Promoted and non-promoted. The app features real-time updates, so users can see newly added food and restaurants at their location. Food as Mood provides a seamless user experience with a clean, modern design and intuitive functionality.",
+        image: Swiggy,
         live: false,
-        technologies: ["React", "Tailwind", "Ace Editor"],
-        link: "https://github.com/Code-Mars/CodeX",
-        github: "https://github.com/Code-Mars/CodeX"
+        technologies: ["React", "Tailwind", "Swiggy API", "Redux"],
+        link: "https://github.com/shakibsiddiqui1/namaste-reacts",
+        github: "https://github.com/shakibsiddiqui1/namaste-react"
     }
 ]
 
@@ -68,45 +95,128 @@ const ProjectInfo = [
 const SkillInfo = [
     {
         title: "Frontend",
-        skills: ["HTML", "CSS", "SASS", "JavaScript", "React JS", "Angular", "Redux", "Tailwind CSS", "GSAP", "Material UI", "Bootstrap"
-        ]
+        skills: [
+        {
+            typ : "HTML",
+            icon : HTML
+        },
+        {
+            typ : "CSS",
+            icon : Css
+        },
+        {
+            typ : "React JS",
+            icon : Reacts
+        },
+        {
+            typ : "Next JS",
+            icon : NextJs
+        },
+        {
+            typ : "Redux",
+            icon : Redux
+        },
+        {
+            typ : "Jest",
+            icon : Jest
+        },
+        {
+            typ : "Tailwind CSS",
+            icon : Tailwind
+        },
+        {
+            typ : "Styled-Components",
+            icon : Styled
+        }
+    ]
     },
     {
         title: "Backend",
-        skills: ["Springboot", "Node JS", "Express JS", "MySQL", "MongoDB", "Firebase", "PostgresSQL"]
+        skills: [
+            {
+                typ : "Node JS",
+                icon : Node
+            },
+            {
+                typ : "Express JS",
+                icon : Express
+            },
+            {
+                typ : "MongoDB",
+                icon : Mongo
+            },
+            {
+                typ : "Firebase",
+                icon : Firebase
+            }]
     },
     {
-        title: "Languages",
-        skills: ["C", "C++", "Java", "JavaScript", "TypeScript"]
+        title: "Languages & Others",
+        skills: [
+            {
+                typ : "JavaScript",
+                icon : Javascript
+            },
+            {
+                typ : "TypeScript",
+                icon : Typescript
+            },
+            {
+                typ : "Agile Methodology",
+                icon : Agile
+            }]
     },
     {
         title: "Tools",
-        skills: ["Git", "Github", "VS Code", "Postman", "MongoDB Compass", "Spring Tool Suite"]
+        skills: [
+            {
+                typ : "Git",
+                icon : Git
+            },
+            {
+                typ : "Github",
+                icon : Github
+            },
+            {
+                typ : "VS Code",
+                icon : Vscode
+            },
+            {
+                typ : "Postman",
+                icon : Postman
+            },
+            {
+                typ : "MongoDB Compass",
+                icon : MongoCompass
+            },
+            {
+                typ : "Docker",
+                icon : Docker
+            }
+         ]
     }
 ]
 const socialLinks = [
-    { link: "https://github.com/Code-Mars", icon: IconBrandGithub },
-    { link: "https://www.linkedin.com/in/chandrabhan-maurya", icon: IconBrandLinkedin },
-    { link: "https://www.instagram.com/code.marshal_", icon: IconBrandInstagram }, 
-    { link: "https://www.youtube.com/channel/UC1ki6jaFvFiH_E79b9FYptw", icon: IconBrandYoutube },
-    { link: "https://www.leetcode.com/u/CodeMars", icon: IconBrandLeetcode }
+    { link: "https://github.com/shakibsiddiqui1", icon: IconBrandGithub },
+    { link: "https://www.linkedin.com/in/shakib-siddiqui-5861a81b4/", icon: IconBrandLinkedin },
+    { link: "https://leetcode.com/u/shakibsiddiqui21/", icon: IconBrandLeetcode }
 ];
 
 
 const ExperienceInfo = [
     {
-        role: "Specialist Programmer",
-        company: "Infosys",
-        date: "Oct 2023 - Present",
-        desc: "I led software development with Spring Boot, React, and Angular, creating scalable microservices and interfaces. I optimized performance by integrating frontend and backend, and enhanced security with RESTful APIs. Collaborating in agile teams, I fostered innovation and efficiency for top-quality solutions.",
-        skills: ["Springboot", "React JS", "Angular", "Node JS", "MySQL", "MongoDB", "Microservices"]
+        role: "Software Engineer",
+        company: "Cognizant",
+        date: "Dec 2022 - April 2024",
+        desc: "I led software development with Typescript, React JS, Redux, AWS created scalable Micro-Frontend architecture. I optimized performance by integrating frontend, and enhanced security with RESTful APIs. Collaborating in agile teams, I fostered innovation and efficiency for top-quality solutions.",
+        skills: ["Typescript", "React JS", "Springboot", "MySQL", "Redux", "Microservices", "AWS", "CI/CD pipelines", "Jest", "Mocha", "Agile", "CSS3", "Styled-Components", "GitLab"]
     },
     {
-        role: "System Engineer",
-        company: "Infosys",
-        date: "Nov 2022 - Sep 2023",
-        desc: " I leveraged my skills in Java, Selenium, automation testing, and MySQL to design and implement automated testing frameworks, ensuring robust software validation. I optimized database performance and reliability, and collaborated with cross-functional teams to enhance system operations and ensure seamless integration.",
-        skills: ["Java", "MySQL", "Hibernate", "Selenium", "Jenkins", "JIRA", "Automation Testing"]
+        role: "Programmer Analyst Trainee",
+        company: "Cognizant",
+        date: "Dec 2021 - Dec 2022",
+        desc: " I leveraged my skills in Javascript, Typescript, React JS, Next JS, Redux, Tailwind CSS and MySQL to design and implement fully responsive micro frontend architecture, ensuring clean, high-quality and robust code. I optimized website performance and reliability, and collaborated with cross-functional teams to enhance security and ensure seamless integration.",
+        skills: ["Javascript", "React JS", "HTML5", "TailwindCSS", "CSS3", "JIRA", "Agile Methodology", "Redux", "Git", "AWS", "Jest", "Mocha", "MySQL", "Next JS"]
     }
 ]
 const Slugs = [

@@ -36,7 +36,7 @@ const Contact = () => {
         if(valid){
             setFormData(form);
             toast.success('Submitted Successfully!', {duration:4000});
-            await addDoc(collection(db, "portfolio"), formData);
+            // await addDoc(collection(db, "portfolio"), formData);
         }
         else{
             toast.error('Some error occurred!', {duration:4000})
